@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4의 배수?</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>4의 배수일까 아닐까</h1>
+    <script>
+      const num = prompt("숫자를 입력하시오.");
+      if (num === null || num === undefined) {
+        exit(0);
+      }
+      if (num % 4 == 0) {
+        document.write(num + "는 4의 배수입니다.").style.textAlign = "center";
+      } else {
+        document.write(num + "는 4의 배수가 아닙니다.").style.textAlign =
+          "center";
+      }
+    </script>
+  </body>
+</html>

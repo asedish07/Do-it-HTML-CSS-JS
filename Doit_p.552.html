@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bigger one</title>
+  </head>
+  <body>
+    <script>
+      let a = prompt("비교할 첫 번째 숫자: "),
+        b = prompt("비교할 두 번째 숫자: ");
+      var bigger = (a, b) => {
+        if (parseInt(a) > parseInt(b)) {
+          alert(a + "(이)가" + b + "보다 큽니다.");
+        } else {
+          alert(b + "(이)가 " + a + "보다 큽니다.");
+        }
+      };
+      bigger(a, b);
+    </script>
+  </body>
+</html>

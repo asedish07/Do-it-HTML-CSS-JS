@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup Timer</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      button {
+        width: 150px;
+        height: 60px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="time">현재 시간 보기</button>
+    <script>
+      document.getElementById("time").onclick = () => {
+        var left = (screen.availWidth - 400) / 2;
+        var top = (screen.availHeight - 200) / 2;
+        var opt =
+          "left=" +
+          left +
+          ", top=" +
+          top +
+          ", width=" +
+          400 +
+          ", height=" +
+          200;
+        const popup = window.open("Doit_p.599.html", "pop", opt);
+        if (popup == null) {
+          alert("팝업이 차단되어 있습니다. 팝업 차단을 해제해 주세요.");
+        }
+      };
+    </script>
+  </body>
+</html>
